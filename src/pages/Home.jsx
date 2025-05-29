@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MovieCard from "../components/MovieCard";
+import "../styles/Home.css";
 
 export default function Home() {
   //   state variables
@@ -30,7 +31,7 @@ export default function Home() {
           onChange={(e) => setSearchInput(e.target.value)}
         />
         <button className="search-button" type="submit">
-          Search
+          <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
       <div className="movie-grid">

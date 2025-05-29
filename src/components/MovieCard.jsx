@@ -1,3 +1,5 @@
+import '../styles/MovieCard.css';
+
 export default function MovieCard({ movie }) {
   // handler for favorite button click
   const handleFavoriteClick = () => {

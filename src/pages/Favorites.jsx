@@ -1,3 +1,5 @@
+import "../styles/Favorites.css";
+
 export default function Favorites() {
   return (
     <div className="favorite">
