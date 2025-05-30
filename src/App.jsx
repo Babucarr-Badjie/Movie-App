@@ -3,10 +3,11 @@ import Home from "./pages/Home";
 import "./styles/App.css";
 import Favorites from "./pages/Favorites";
 import Navbar from "./components/Navbar";
+import { MovieProvider } from "./context/MovieContext";
 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <Navbar />
       <main className="main-content">
         <Routes>
@@ -15,7 +16,7 @@ function App() {
           <Route path="*" element={<h2>Page Not Found</h2>} />
         </Routes>
       </main>
-    </div>
+    </MovieProvider>
   );
 }
 

@@ -8,7 +8,7 @@
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #141313;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -47,4 +47,27 @@
 
 .movies-grid > * {
   animation: fadeIn 0.3s ease-out forwards;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: center; /* Center items horizontally */
+}
+
+.movies-grid:only-child,
+.movies-grid:has(> :only-child) {
+  max-width: 340px; /* Slightly larger than card */
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.movies-grid.single {
+  max-width: 340px;
+  margin: 0 auto;
+  justify-content: center;
 }
