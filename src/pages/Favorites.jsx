@@ -9,7 +9,7 @@ export default function Favorites() {
   if (favorites && favorites.length > 0) {
     return (
       <div className="favorites">
-        <h2>Your Favorites</h2>
+        <h2>Your Favorite Movies</h2>
         <div className={`movies-grid${favorites.length === 1 ? " single" : ""}`}>
           {favorites.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
