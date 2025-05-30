@@ -11,6 +11,7 @@ export default function Footer() {
         <p>Babucarr Badjie</p>
         <i class="fa-regular fa-address-card"></i>
       </a>
+      <p>© 2025. All rights reserved</p>
     </footer>
   );
 }
